@@ -1,13 +1,13 @@
 import streamlit as st
-from sklearn import datasets
+'''from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report'''
 
 def app():
     st.header('CENSUS INTERVIEW DATA COLLECTION PROGRESS REPORT')
 
-    # Load iris dataset
+    ''' # Load iris dataset
     iris = datasets.load_iris()
     X = iris.data
     Y = iris.target
@@ -20,7 +20,7 @@ def app():
     clf.fit(X_train, Y_train)
     score = clf.score(X_test, Y_test)
     st.write('Accuracy:')
-    st.write(score)
+    st.write(score)'''
 
     # Alternative syntax, declare a form and use the returned object
     form = st.form(key='my_form')
