@@ -15,7 +15,6 @@ def app():
     '''connection = mysql.connector.connect(host='sql10.freemysqlhosting.net',
                                          user='sql10411482',
                                          password='VmhMnlwmuN',db='sql10411482')'''
-    
     connection = mysql.connector.connect(host='localhost',
                                           user='root',
                                          password='',db='5phcdb')
