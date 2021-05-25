@@ -15,10 +15,11 @@ def app():
     '''connection = mysql.connector.connect(host='sql10.freemysqlhosting.net',
                                          user='sql10411482',
                                          password='VmhMnlwmuN',db='sql10411482')'''
-                                         
+
     connection = mysql.connector.connect(host=st.Secrets['host'],
-                                          user=st.Secrets['user'],
-                                         password=st.Secrets['password'],db=st.Secrets['db'])
+                                         user=st.Secrets['user'],
+                                         password=st.Secrets['password'],
+                                         db=st.Secrets['db'])
 
     census_tables = pd.read_sql_query("SELECT * FROM `level-1`", connection)
     world = pd.read_csv('./covid_19_data.csv')
