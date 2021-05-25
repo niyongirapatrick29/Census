@@ -38,7 +38,6 @@ def app():
         unsafe_allow_html=True)
 
         coutry_data = world[world['Country']==c]
-        st.sidebar.write(type(coutry_data))
         
         coutry_data.rename(columns = {'Lat':'lat','Long':'lon'}, inplace=True)
         st.map(coutry_data)
